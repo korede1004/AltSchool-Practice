@@ -1,0 +1,82 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    /* height: 100vh;: This sets the height of the element to 100% of the viewport height. The vh unit represents a percentage of the viewport height.
+
+    background: radial-gradient(100% 200% at left, #af1a1a 50%, #1e1e55) 50.1%);: This sets the background of the element to a radial gradient. Let me break down the radial gradient parameters:
+
+    100% 200%: This defines the shape of the gradient. In this case, it's an ellipse where the horizontal radius is 100% of the container width, and the vertical radius is 200% of the container height.
+
+    at left: This positions the center of the gradient at the left side of the element.
+
+    #af1a1a 50%, #1e1e55 50.1%: This defines two color stops for the gradient. The first color stop (#af1a1a) is set at 50%, and the second color stop #1e1e55) is set at 50.1%. This creates a smooth transition between the two colors.
+
+    The gradient starts with the color #af1a1a on the left side, transitioning to the color #1e1e55 just after the halfway point.
+
+    This code is often used to create a visually interesting and dynamic background for a webpage or a specific element. The colors and positioning can be adjusted based on your design preferences. */
+    
+    height:100vh;
+    background:radial-gradient(100% 200% at left, #af1a1a 50%,#1e1e55 50.1%);
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+
+}
+
+.card{
+/* From https://css.glass */
+background: rgba(250, 161, 161, 0.05);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.1px);
+-webkit-backdrop-filter: blur(2.1px);
+
+    width: 450px;
+    height: 250px; /* This sets the height of the element to 300px. */
+    /* border: 1px solid; */
+    padding: 20px;
+
+}
+
+
+
+
+.frontView{
+    >header{
+        display: flex;
+        justify-content: space-between;
+        padding-block-end: 40px;
+    }
+
+    >header .master{
+    display: flex;
+    }
+    
+}
+
+.card-number{
+    padding-block-end: 20px;    
+    >p:not(:first-child){
+     padding-block-start: 10px;
+    }
+}
+        
+.backView{
+    display: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    .card-holder{
+        font-size: 24px;
+        padding-block-start: 10px;
+    }
+}

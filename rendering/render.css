@@ -1,0 +1,42 @@
+/* a::before{
+    text-decoration: line-through;
+    border: 2px solid green;
+}
+a::after{
+    text-decoration: line-through;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline 3px solid red;
+}
+button{
+    background-color: blue;
+    color: white;
+}
+button:hover{
+
+    background-color: unset;
+    color: unset;
+}
+button::after{
+    color:blue;
+    background-color: brown;
+} */
+
+main {
+    background-color: black;
+    color: red;
+  }
+  section {
+    color: green;
+  }
+  p {
+    color:lightslategrey;
+  }
+    section.with-revert {
+    color: initial;
+  }
+
+  .blockAndInline {
+    display: flex;
+  }
